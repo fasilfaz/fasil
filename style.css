@@ -280,13 +280,13 @@ nav .buttons.active .bar{
         width: 100%;
     }
     .left .btn{
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
     .right .profile{
         padding-top: 50px;
     }
     .social{
-        display: none;
+        margin-top:30px ;
     }
 }
 @media screen and (max-width:767px){
