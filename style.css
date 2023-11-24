@@ -224,6 +224,7 @@ nav .buttons.active .bar{
 
 
 .about{
+    overflow: hidden;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -234,7 +235,7 @@ nav .buttons.active .bar{
     justify-content: center;
 }
 .about .about-info{
-    margin: 100px;
+    margin: 70px;
 }
 .about-heading{
     color: var(--white);
@@ -242,14 +243,25 @@ nav .buttons.active .bar{
     font-size: 30px;
     font-weight: 600;
 }
+.about-heading a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 600;
+}
 .about-left-side{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-direction: row;
 }
 .about-left-side .leftside-1{
+    height: 150px;
+    width: 170px;
     margin-right: 10px;
+}
+.about-left-side .left-side-2{
+    height: 150px;
+    width: 350px;
 }
 hr{
     height: 100px;
@@ -266,15 +278,16 @@ hr{
     color: var(--text-color);
     font-size: 18px;
 }
-.left-side-3{
+.left-side-3 .colums{
     display: flex;
+    flex-direction: row;
 }
 .colums .colum-1{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 20px;
+    margin-right: 20px;
     height: 200px;
     width: 220px;
     border: 1px solid black;
@@ -314,7 +327,7 @@ hr{
         z-index: auto;
     }
     .about{
-        
+        overflow: hidden;
         z-index: auto;
     }
     .left h1{
@@ -323,9 +336,6 @@ hr{
     .right .profile img{
         width: 450px;
         height: 450px;
-    }
-    .about{
-        overflow: hidden;
     }
     
 }
@@ -400,12 +410,6 @@ hr{
     }
     .about .about-info{
         margin: 35px;
-    }
-    .about-left-side .leftside-1{
-        padding: 20px;
-    }
-    .about-left-side .left-side-2{
-        padding: 20px;
     }
     hr{
         display: none;
