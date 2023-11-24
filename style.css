@@ -85,7 +85,7 @@ nav .buttons::before{
     height: 3px;
     background: var(--white);
     margin: 6px 0;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 nav .buttons.active::before{
     transform: rotate(-45deg) translate(-8px, 5px);
@@ -220,6 +220,91 @@ nav .buttons.active .bar{
 
 
 
+/* about-page */
+
+
+.about{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+}
+.about .about-info{
+    margin: 100px;
+}
+.about-heading{
+    color: var(--white);
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.about-left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.about-left-side .leftside-1{
+    margin-right: 10px;
+}
+hr{
+    height: 100px;
+    margin-right: 10px;
+}
+.about-left-side .about-list li{
+    list-style: none;
+}
+.about-list li .about-title{
+    font-size: 15px;
+    color: #f2f2f2;
+}
+.about-list li .value{
+    color: var(--text-color);
+    font-size: 18px;
+}
+.left-side-3{
+    display: flex;
+}
+.colums .colum-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    height: 200px;
+    width: 220px;
+    border: 1px solid black;
+}
+.colum-1 .number{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+}
+.colum-1 .number::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 33px;
+    bottom: 1px;
+    left: 0;
+    background: var(--white);
+    border-radius: 5px;
+}
+.colum-1 .box .small-text{
+    margin-top: 10px;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+.colum-1 .box .spann{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
 @media screen and (max-width:1280px) {
     nav{
         padding: 0 50px;
@@ -228,12 +313,19 @@ nav .buttons.active .bar{
         padding: 200px 50px 50px;
         z-index: auto;
     }
+    .about{
+        
+        z-index: auto;
+    }
     .left h1{
         font-size: 5rem;
     }
     .right .profile img{
         width: 450px;
         height: 450px;
+    }
+    .about{
+        overflow: hidden;
     }
     
 }
@@ -288,6 +380,12 @@ nav .buttons.active .bar{
     .social{
         margin-top:30px ;
     }
+    .about{
+        position: relative;
+    }
+    .about-left-side{
+        flex-wrap: wrap;
+    }
 }
 @media screen and (max-width:767px){
     .left span{
@@ -299,6 +397,18 @@ nav .buttons.active .bar{
     .right .profile img{
         width: 375px;
         height: 375px;
+    }
+    .about .about-info{
+        margin: 35px;
+    }
+    .about-left-side .leftside-1{
+        padding: 20px;
+    }
+    .about-left-side .left-side-2{
+        padding: 20px;
+    }
+    hr{
+        display: none;
     }
 }
 @media screen and (max-width:567px){
@@ -318,5 +428,15 @@ nav .buttons.active .bar{
     .right .profile img{
         width: 300px;
         height: 300px;
+    }
+    .about{
+        height: 100vh;
+        overflow: hidden;
+    }
+    .about .about-info{
+        margin: 25px;
+    }
+    hr{
+        display: none;
     }
 }
