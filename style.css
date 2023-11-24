@@ -438,9 +438,14 @@ hr{
     hr{
         display: none;
     }
+    .profile-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     .profile-info .profile-2{
-        width: 250px;
-        height: 250px;
+        width: 375px;
+        height: 375px;
     }
     .profile-2 img{
         height: 100%;
@@ -477,8 +482,8 @@ hr{
         flex-direction: column;
     }
     .profile-info .profile-2{
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
     .profile-2 img{
         height: 100%;
