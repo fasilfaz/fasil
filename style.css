@@ -492,6 +492,7 @@ hr{
         height: 120px;
     }
     .about-left-side .left-side-2{
+        margin-top: 20px;
         height: 120px;
     }
     .about-list li .about-title{
@@ -506,7 +507,7 @@ hr{
         justify-content: space-evenly;
     }
     .colums .colum-1{
-        padding: 10px;
+        margin-top: 20px;
         margin-right: 20px;
         height: 120px;
         width: 120px;
