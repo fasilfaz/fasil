@@ -496,10 +496,11 @@ hr{
         height: 120px;
     }
     .about-list li .about-title{
-        font-size: 12px;
+        font-size: 14px;
     }
     .about-list li .value{
-        font-size: 15px;
+        font-size: 17px;
+        font-weight: 400;
     }
     .left-side-3 .colums{
         display: flex;
