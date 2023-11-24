@@ -231,15 +231,20 @@ nav .buttons.active .bar{
     margin: 0;
     z-index: -1;
     background: var(--bg-color);
-    display: flex;
-    justify-content: center;
 }
 .about .about-info{
-    margin: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
-.about-heading{
+.profile-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile-info .about-heading{
     color: var(--white);
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: 30px;
     font-weight: 600;
 }
@@ -249,7 +254,24 @@ nav .buttons.active .bar{
     font-size: 30px;
     font-weight: 600;
 }
+.profile-info .profile{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--text-color);
+}
+.profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+}
 .about-left-side{
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -414,6 +436,14 @@ hr{
     hr{
         display: none;
     }
+    .profile-info .profile{
+        width: 250px;
+        height: 250px;
+    }
+    .profile img{
+        height: 100%;
+        width: 100%;
+    }
 }
 @media screen and (max-width:567px){
     nav{
@@ -433,14 +463,53 @@ hr{
         width: 300px;
         height: 300px;
     }
-    .about{
-        height: 100vh;
-        overflow: hidden;
-    }
     .about .about-info{
-        margin: 25px;
+        margin: 15px;
     }
     hr{
         display: none;
+    }
+    .profile-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .profile-info .profile{
+        width: 200px;
+        height: 200px;
+    }
+    .profile img{
+        height: 100%;
+        width: 100%;
+    }
+    .about-left-side{
+        margin-top: 0;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .about-left-side .leftside-1{
+        height: 120px;
+    }
+    .about-left-side .left-side-2{
+        height: 120px;
+    }
+    .about-list li .about-title{
+        font-size: 12px;
+    }
+    .about-list li .value{
+        font-size: 15px;
+    }
+    .left-side-3 .colums{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .colums .colum-1{
+        padding: 10px;
+        margin-right: 20px;
+        height: 120px;
+        width: 120px;
+        border: 1px solid black;
     }
 }
